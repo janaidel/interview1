@@ -1,11 +1,36 @@
 public class Task2 {
+
+    public static void main(String[] args) {
+        Account account = getAccount();
+
+        account.deposit(10);
+        account.withdraw(10);
+
+        // ..
+    }
+
+    public static Account getAccount() {
+        return new SimpleAccount();
+    }
 }
 
 
-abstract class Account {
-    int amount;
+interface Account {
+    void deposit(int amount);
 
-    public abstract void add(int amount);
+    void withdraw(int amount);
+}
 
-    public abstract void subtract(int amount);
+class SimpleAccount implements Account {
+    private int amount = 0;
+
+    @Override
+    public void deposit(int amount) {
+        this.amount += amount;
+    }
+
+    @Override
+    public void withdraw(int amount) {
+        this.amount -= amount;
+    }
 }
