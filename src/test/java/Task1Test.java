@@ -19,4 +19,14 @@ class Task1Test {
 
         assertEquals(compute, 1);
     }
+
+
+    @Test
+    public void shouldReturn3() {
+        int compute = underTest.computeFibonacci(4);
+
+        assertEquals(compute, 3);
+    }
 }
+
+// 1 1 2 3
