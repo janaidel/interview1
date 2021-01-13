@@ -1,6 +1,10 @@
 public class Task1 {
 
     public int computeFibonacci(int n) {
-        return 1;
+
+        if (n <= 2 ) {
+            return 1;
+        };
+        return 0;
     }
 }
