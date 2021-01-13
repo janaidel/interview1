@@ -8,7 +8,14 @@ class Task1Test {
 
     @Test
     public void shouldReturnOne() {
-        int compute = underTest.compute(1);
+        int compute = underTest.computeFibonacci(1);
+
+        assertEquals(compute, 1);
+    }
+
+    @Test
+    public void shouldReturnOneForSecondNumber() {
+        int compute = underTest.computeFibonacci(2);
 
         assertEquals(compute, 1);
     }

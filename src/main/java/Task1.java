@@ -1,6 +1,6 @@
 public class Task1 {
 
-    public int compute(int n) {
-        return 0;
+    public int computeFibonacci(int n) {
+        return 1;
     }
 }
