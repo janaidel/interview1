@@ -18,4 +18,11 @@ class Task1Test {
 
         assertEquals(compute, 1);
     }
+
+    @Test
+    public void shouldReturnThirdValue(){
+        int compute = underTest.compute(3);
+
+        assertEquals(compute, 2);
+    }
 }
