@@ -31,4 +31,11 @@ class Task1Test {
 
         assertEquals(compute, 3);
     }
+
+    @Test
+    public void shouldReturnXValue(){
+        int compute = underTest.compute(4000);
+
+        assertEquals(compute, 3);
+    }
 }
