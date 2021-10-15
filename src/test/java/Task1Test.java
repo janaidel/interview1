@@ -12,4 +12,10 @@ class Task1Test {
 
         assertEquals(compute, 1);
     }
+    @Test
+    public void shouldReturnSecondValue(){
+        int compute = underTest.compute(2);
+
+        assertEquals(compute, 1);
+    }
 }
