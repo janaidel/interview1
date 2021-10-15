@@ -25,4 +25,10 @@ class Task1Test {
 
         assertEquals(compute, 2);
     }
+    @Test
+    public void shouldReturnFourthValue(){
+        int compute = underTest.compute(4);
+
+        assertEquals(compute, 3);
+    }
 }
